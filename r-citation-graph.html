@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        R Citation Graph
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "James"
+  },
+  "headline": "R Citation Graph",
+  "datePublished": "2021-01-24",
+  "image": "https://www.r-bloggers.com/wp-content/uploads/2020/04/r-bloggers_2020-04-17.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Shuriken MOD",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=r+citation+graph",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->
+<div id='fixedban' style='width:100%;margin:auto;text-align:center;float:none;overflow:hidden;display:scroll;position:fixed;bottom:0;z-index:999;-webkit-transform:translateZ(0);'>
+	<div>
+		<a id='close-fixedban' onclick='document.getElementById("fixedban").style.display = "none";' style='cursor:pointer;'><img alt='close' src='https://yess-online.com/close.png' title='close button' style='vertical-align:middle;'/></a>
+	</div>
+	<div style='text-align:center;display:block;max-width:728px;height:auto;overflow:hidden;margin:auto'>
+		<script type="text/javascript">
+	atOptions = {
+		'key' : 'fd24aa247dea2a728a2083452b5b7e46',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://calumnylightlyspider.com/fd24aa247dea2a728a2083452b5b7e46/invoke.js"></scr' + 'ipt>');
+</script>
+	</div>
+</div></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            R Citation Graph
+            </a>
+        </h1>
+        <p>
+                            Best image references website
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>R Citation Graph</strong>. Cite the graph within your research paper as figure followed by whichever number you have assigned it for example figure 4 create a caption below your graph. Usage make full citation graph n directed true full citation graph arguments.</p>
+            <figure>
+        <img class="v-cover ads-img" src="http://www.sthda.com/english/sthda-upload/figures/principal-component-methods/013-pca-in-r-prcomp-vs-princomp-eigenvalue-scree-plot-1.png" alt="Principal Component Analysis In R Prcomp Vs Princomp Articles Sthda" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ478_zX6VVzyUgaqGDpr4zIZtNSDjCnB6ffg';">
+        <figcaption>Principal Component Analysis In R Prcomp Vs Princomp Articles Sthda from www.sthda.com</figcaption>
+    </figure>
+        <p>
+        Create a field citations in bibtex bib to indicate that a paper cites another paper relevant to your bibliography. Make full citation graph creates a full citation graph. Usage make full citation graph n directed true full citation graph arguments.
+    </p>
+    <h3>Release 3 12 a package that implements some simple graph handling capabilities.</h3>
+    <p>Make full citation graph creates a full citation graph. If directed false then the graph is just a full graph. Create a complete full citation graph description. Release 3 12 a package that implements some simple graph handling capabilities.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Sustainability Free Full Text Tourism And Sustainability A Bibliometric And Visualization Analysis Html" src="https://www.mdpi.com/sustainability/sustainability-10-01976/article_deploy/html/images/sustainability-10-01976-g003.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9VTphVmn30YNRwHSCuEzEcXxjNtxaPKBW-A';" />
+        <small>Source: www.mdpi.com</small>
+        <p>Make full citation graph creates a full citation graph.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Multiple Linear Regression A Quick And Simple Guide" src="https://cdn.scribbr.com/wp-content/uploads//2020/02/multiple-regression-in-r-graph-1.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRljIIj4Uh1mD3Bm5uPloUmf551wst0sYwQHw';" />
+        <small>Source: www.scribbr.com</small>
+        <p>This is a directed graph where every code i j code edge is present if and only if j i.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="4 Ways To Cite A Graph In A Paper Wikihow" src="https://www.wikihow.com/images/thumb/a/af/Cite-a-Graph-in-a-Paper-Step-13-Version-2.jpg/v4-460px-Cite-a-Graph-in-a-Paper-Step-13-Version-2.jpg.webp" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNmfrM0GeNZtEJ0sF6xfrVudg7UrJXHJTTYg';" />
+        <small>Source: www.wikihow.com</small>
+        <p>You can get the citation information for r packages like this.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Dataisbeautiful R Dataisbeautiful Information Visualization Data Visualization Graphing" src="https://i.pinimg.com/originals/05/05/be/0505be245bec92e1add9731131a95790.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQThna9qWo0I7ZjH0SoyB8JdziK5vkjh8toIg';" />
+        <small>Source: www.pinterest.com</small>
+        <p>This is a directed graph where every i j edge is present if and only if j i.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="A Pipeline Toolkit For Reproducible Computation At Scale Ropensci Drake" src="https://docs.ropensci.org/drake/reference/figures/graph.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrfOg9QORMESBXjohlu8GcWj3gDpoPOV8gNw';" />
+        <small>Source: docs.ropensci.org</small>
+        <p>Make full citation graph creates a full citation graph.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pathview An R Package For Pathway Based Data Integration And Visualization" src="http://pathview.r-forge.r-project.org/images/hsa04110.gse16873.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3MTmbKz6A5C3uhlssyXYja3UXmjHf5QcWwQ';" />
+        <small>Source: pathview.r-forge.r-project.org</small>
+        <p>Bibtex is just a format used by some reference managers.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="R Handbook Basic Plots" src="https://rcompanion.org/handbook/images/image018.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR27cMaLKNuqyWNJysc6w_tmvuk6rmTzS-qDw';" />
+        <small>Source: rcompanion.org</small>
+        <p>This is a directed graph where every i j edge is present if and only if j i.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="X And R Chart Wikipedia" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/R_chart_for_a_paired_xbar_and_R_chart.svg/1200px-R_chart_for_a_paired_xbar_and_R_chart.svg.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5pFFmY7EkfV1TyRYKRnJd9ladTKQ0I0q3Rg';" />
+        <small>Source: en.wikipedia.org</small>
+        <p>Bibtex is just a format used by some reference managers.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ggplot Scatter Plot Best Reference Datanovia" src="https://www.datanovia.com/en/wp-content/uploads/dn-tutorials/ggplot2/figures/004-ggplot-scatter-plot-bubble-chart-1.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaYcR8BDf4iWvzNPR_xxUDWBQTjykWd_nYAg';" />
+        <small>Source: www.datanovia.com</small>
+        <p>A package to handle graph data structures.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/home-decor-items.html"><i>&larr; home decor items</i></a>
+                                                                    
+                                        <a href="/home-decor-ideas.html"><i>home decor ideas &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Footer CSS JS -->            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>
